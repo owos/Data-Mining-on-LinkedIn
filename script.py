@@ -181,4 +181,4 @@ if __name__ == "__main__":
     parser = get_parser()
     params, unknown = parser.parse_known_args()
     scraped_links = linkedin(url)
-    output(params.output_file_name, scraped_links[11:15])
+    output(params.output_file_name, scraped_links)
