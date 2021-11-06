@@ -1,0 +1,1 @@
+This is a simple script containing the code to scrape date from linked in and output it as a cvs file.
