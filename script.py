@@ -1,4 +1,5 @@
-from os import link
+"""Tribute to AI Saturday Lagos"""
+
 import requests
 from bs4 import BeautifulSoup
 import datetime
