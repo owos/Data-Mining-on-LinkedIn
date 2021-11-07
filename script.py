@@ -16,8 +16,10 @@ def get_parser():
     """
     parse command line arguments
 
-    returns:
-        parser - ArgumentParser object
+    Returns
+    -------
+    parser - ArgumentParser object
+
     """
     parser = argparse.ArgumentParser(description="Linkedin Job Scraper")
     parser.add_argument(
@@ -31,6 +33,18 @@ def get_parser():
 
 #creating a function that collects all the jobs url on linkedin
 def linkedin (url):
+    """
+    A function that collects all the jobs url on linkedin
+    
+    Parameters
+    ----------
+    url: the linkedin jobs homepage
+
+    Returns
+    -------
+    job_links (list): a list of links to direct jobs on LinkedIn
+
+    """
     job_links = []
     for val in [url + str(x) for x in list(range(0, 975, 25))]:
         response = requests.get(val)
@@ -54,7 +68,11 @@ def job_content (job_url: list):
     """
     Parameters
     ----------
-    job_url: list of 
+    job_url (list): a list of links to direct jobs on LinkedIn 
+
+    Returns
+    ------
+    title, linkedin_link, jd, company, location, date_posted 
     """
     ##testing a link   
     countss = 0
