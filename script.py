@@ -46,7 +46,8 @@ def linkedin (url):
 
     """
     job_links = []
-    for val in [url + str(x) for x in list(range(0, 975, 25))]:
+    page_range = [url + str(x) for x in list(range(0, 975, 25))]
+    for val in page_range:
         response = requests.get(val)
         soup_object = BeautifulSoup(response.text, "html.parser")
 
@@ -201,3 +202,8 @@ if __name__ == "__main__":
     params, unknown = parser.parse_known_args()
     scraped_links = linkedin(url)
     output(params.output_file_name, scraped_links)
+
+""" Author: Abraham Owodunni
+    Email: owodunniabraham@gmail.com
+    Twitter: @AbrahamOwos
+"""
