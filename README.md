@@ -1,2 +1,2 @@
 # Data Scraper
-This is a simple script containing the code to scrape Nigerian jobs from LinkedIn and output it as a cvs file. All thanks to AI Saturday Lagos for giving me this Knowledge. 
+This is a simple script containing the code to scrape Nigerian jobs from LinkedIn and output it as a cvs file. All thanks to [AI Saturday Lagos](https://github.com/AISaturdaysLagos) for giving me this Knowledge. Some of the functions were sourced from this [Web scraping repo](https://github.com/AISaturdaysLagos/cohort7_practicals/tree/main/2_Webscraping_and_Data_Labelling)
